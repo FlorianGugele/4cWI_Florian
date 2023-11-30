@@ -11,8 +11,9 @@ function fillGames(data) {
         const element = document.getElementById("match");
 
         let html = "";
-        data.forEach(match => {
-            html += '<div class="flex flex-col items-center bg-blue-500 m-2 h-[80%] w-[20%] mb-10 mr-10"><div><p class="text-white text-center font-bold text-xs">' 
+        data.forEach((match,index) => {
+            if(index >=80){
+            html += '<div class=" flex flex-col items-center bg-blue-500 m-2 h-[80%] w-[20%] mb-10 mr-10"><div><p class="text-white text-center font-bold text-xs">' 
                 + match.matchDateTime + '</div>'
             html += '<div><p class="text-white text-center font-bold text-xs">Gruppe '
                 + match.group.groupOrderID +'</p></div>'
@@ -26,11 +27,11 @@ function fillGames(data) {
                 + match.team2.teamName + '</p></div></div></div>'
 
             console.log(match.team1.teamName)
+        }
         });
         document.getElementById("match").innerHTML = html;
         console.log(html);
 
-        // process your data further
     } 
 
 
