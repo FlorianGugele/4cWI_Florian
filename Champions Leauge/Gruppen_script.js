@@ -13,11 +13,11 @@ function fillGroups(data) {
         let html = "";
         data.forEach((Gruppe,index) => {
             let postition = index + 1;
-            html += '<div class="h-[82vh] bg-contain w-full flex flex-wrap justify-center gap-10" id="Gruppe"><div class="relative mt-12"><div class="m-2 mb-2 bg-stone-200 z-10"><p class="font-bold">Gruppe A</p></div><div class="w-[15vw] h-[28vh] m-2 bg-stone-200 z-0 flex flex-col items-center justify-center"><div class="flex items-center justify-between bg-blue-500 m-2 h-12 mt-2 mb-0.5 w-[95%]"><p class="ml-2 mr-4">1</p>'
-            + postition +
+            html += '<div class="relative mt-12 w-[15vw] m-4"><div class="m-2 mb-2 bg-stone-200 z-10 w-[15vw]"><p class="font-bold">Gruppe A</p></div><div class="w-[15vw] h-[28vh] m-2 bg-stone-200 z-0 flex flex-col items-center justify-center"><div class="flex items-center justify-between bg-blue-500 m-2 h-12 mt-2 mb-0.5 w-[95%]"><p class="ml-2 mr-4">1</p>'
+            + 1 +
             '</p><a href="Teams.html"><img class="w-[3vh] h-[3vh] mx-2 mr-14" src="'
             + Gruppe.teamIconUrl +
-            '</a><p class="mr-16">'
+            '"></a><p class="mr-16">'
             + Gruppe.teamName +
             '</p><p class="mr-2">'
             + Gruppe.points +
@@ -27,7 +27,7 @@ function fillGroups(data) {
             //zweiter platz
 
             + '<div class="flex items-center justify-between bg-blue-500 m-2 h-12 mt-2 mb-0.5 w-[95%]"><p class="ml-2 mr-4">1</p>'
-            + postition +
+            + 2 +
             '</p><a href="Teams.html"><img class="w-[3vh] h-[3vh] mx-2 mr-14" src="'
             + Gruppe.teamIconUrl +
             '</a><p class="mr-16">'
@@ -40,7 +40,7 @@ function fillGroups(data) {
             // dritter platz
 
             +'<div class="flex items-center justify-between bg-blue-500 m-2 h-12 mt-2 mb-0.5 w-[95%]"><p class="ml-2 mr-4">1</p>'
-            + postition +
+            + 3 +
             '</p><a href="Teams.html"><img class="w-[3vh] h-[3vh] mx-2 mr-14" src="'
             + Gruppe.teamIconUrl +
             '</a><p class="mr-16">'
@@ -52,7 +52,7 @@ function fillGroups(data) {
             // vierter platz
 
             +'<div class="flex items-center justify-between bg-blue-500 m-2 h-12 mt-2 mb-0.5 w-[95%]"><p class="ml-2 mr-4">1</p>'
-            + postition +
+            + 4 +
             '</p><a href="Teams.html"><img class="w-[3vh] h-[3vh] mx-2 mr-14" src="'
             + Gruppe.teamIconUrl +
             '</a><p class="mr-16">'
@@ -63,8 +63,7 @@ function fillGroups(data) {
     
 
         });
-        document.getElementById("Gruppe").innerHTML = html;
-        console.log(html);
+        document.getElementById("Gruppe").innerHTML = html;;
 
     } 
 
