@@ -12,7 +12,9 @@ function fillGames(data) {
 
         let html = "";
         data.forEach((match,index) => {
-            if(index >=80){
+  
+            if(index <16){
+            console.log(index);
             html += '<div class=" flex flex-col items-center bg-blue-500 m-2 h-[190px] w-[20%] mb-10 mr-10"><div><p class="text-white text-center font-bold text-xs">' 
                 + match.matchDateTime + '</div>'
             html += '<div><p class="text-white text-center font-bold text-xs">Gruppe '
