@@ -1,6 +1,6 @@
 function checkGroups() {
 
-    fetch('https://api.openligadb.de/getmatchdata/champion1/2023').then((response) =>
+    fetch('https://api.openligadb.de/getcurrentgroup/champion1').then((response) =>
         response.json().then((result) => {
             fillGroups(result);
         })
@@ -13,7 +13,7 @@ function fillGroups(data) {
         let html = "";
         data.forEach((Gruppe,index) => {
             let postition = index + 1;
-            html += '<div class="relative mt-12 w-[15vw] m-4"><div class="m-2 mb-2 bg-stone-200 z-10 w-[15vw]"><p class="font-bold">Gruppe A</p></div><div class="w-[15vw] h-[28vh] m-2 bg-stone-200 z-0 flex flex-col items-center justify-center"><div class="flex items-center justify-between bg-blue-500 m-2 h-12 mt-2 mb-0.5 w-[95%]"><p class="ml-2 mr-4">1</p>'
+            html += '<div class="relative mt-12 w-[15vw] m-4"><div class="m-2 mb-2 bg-stone-200 z-10 w-[15vw]"><p class="font-bold">Gruppe A</p></div><div class="w-[15vw] h-[26vh] m-2 bg-stone-200 z-0 flex flex-col items-center justify-center"><div class="flex items-center justify-between bg-blue-500 m-2 h-12 mt-2 mb-0.5 w-[95%]"><p class="ml-2 mr-4">1</p>'
             + 1 +
             '</p><a href="Teams.html"><img class="w-[3vh] h-[3vh] mx-2 mr-14" src="'
             + Gruppe.teamIconUrl +
