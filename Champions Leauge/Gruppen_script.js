@@ -1,4 +1,4 @@
-function checkGroups() {
+/*function checkGroups() {
 
     fetch('https://api.openligadb.de/getcurrentgroup/champion1').then((response) =>
         response.json().then((result) => {

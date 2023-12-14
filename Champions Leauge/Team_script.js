@@ -20,8 +20,9 @@ function fillTeam(data) {
     console.log(html1);
 }
  
+checkTeam();
 
-function checkOpponent(){
+/*function checkOpponent(){
 
 fetch('https://api.openligadb.de/getnextmatchbyleagueteam/4673/1201').then((response) =>
     response.json().then((result) => {
