@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <header className="App-header">
+      <body className="bg-green-400 min-w-fit object-contain">
+
+        <div class="bg-stone-200 h-[9vh] flex items-center">
+          <div><a href="Index.html"><img class="h-[7.5vh] w-[7.5vh] ml-4" src="images/logo.jpg" alt="Logo"></img></a></div>
+          <p class="flex-1 text-center"><a href="News.html" class="transition hover:bg-stone-400">News</a></p>
+          <p class="flex-1 text-center"><a href="Matches.html" class="transition hover:bg-stone-400">Spiele</a></p>
+          <p class="flex-1 text-center"><a href="Teams.html" class="transition hover:bg-stone-400">Teams</a></p>
+          <p class="flex-1 text-center"><a href="Gruppen.html" class="transition hover:bg-stone-400">Gruppen</a></p>
+        </div>
+      </body>
+    </header>
+ 
   );
 }
 
