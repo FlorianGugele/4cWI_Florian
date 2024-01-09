@@ -16,6 +16,7 @@ function App() {
           <p class="flex-1 text-center"><a href="Gruppen.html" class="transition hover:bg-stone-400">Gruppen</a></p>
         </div>
       </body>
+      <h1>Test</h1>
     </header>
  
   );
