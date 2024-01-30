@@ -1,23 +1,48 @@
-
-
-import FooterComponent from './components/FooterComponent';
-import HeaderComponent from './components/HeaderComponent';
+import React from 'react';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Main from './pages/main';
 import './App.css';
+import Group from './pages/group';
+import Team from './pages/team';
+import Match from './pages/match';
+import News from './pages/news';
 
-function App() {
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Main />,
+  
+    children: [
+      {
+        path: "group/",
+        element: <Group />,
+        
+      },
+      {
+        path: "team/",
+        element: <Team />,
+        
+      },
+      {
+        path: "news/",
+        element: <News />,
+        
+      },
+      {
+        path: "match/",
+        element: <Match />,
+        
+      },
+    ],
+  },
+]);
+
+export default function App(){
   return (
-
-    <header className="App-header">
-      <HeaderComponent/>
-
-      <body class="h-[82vh]">
-
-      </body>
-
-      <FooterComponent/>
-      
-    </header>
-  );
+    <RouterProvider router={router} />
+  )
 }
-
-export default App;

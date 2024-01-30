@@ -1,13 +1,34 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Header() {
+export default function HeaderComponent() {
   return (
-    <div class="bg-stone-200 h-[9vh] flex items-center">
-        <div><a href="Index.html"><img class="h-[7.5vh] w-[7.5vh] ml-4" src="images/logo.jpg" alt="Logo"></img></a></div>
-        <p class="flex-1 text-center"><a href="News.html" class="transition hover:bg-stone-400">News</a></p>
-        <p class="flex-1 text-center"><a href="Matches.html" class="transition hover:bg-stone-400">Spiele</a></p>
-        <p class="flex-1 text-center"><a href="Teams.html" class="transition hover:bg-stone-400">Teams</a></p>
-        <p class="flex-1 text-center"><a href="Gruppen.html" class="transition hover:bg-stone-400">Gruppen</a></p>
+    <div className="bg-stone-200 h-[9vh] flex items-center">
+      <div>
+        <Link to="/">
+          <img className="h-[7.5vh] w-[7.5vh] ml-4" src="images/logo.jpg" alt="Logo" />
+        </Link>
+      </div>
+      <p className="flex-1 text-center">
+        <Link to="/news" className="transition hover:bg-stone-400">
+          News
+        </Link>
+      </p>
+      <p className="flex-1 text-center">
+        <Link to="/match" className="transition hover:bg-stone-400">
+          Spiele
+        </Link>
+      </p>
+      <p className="flex-1 text-center">
+        <Link to="/team" className="transition hover:bg-stone-400">
+          Teams
+        </Link>
+      </p>
+      <p className="flex-1 text-center">
+        <Link to="/group" className="transition hover:bg-stone-400">
+          Gruppen
+        </Link>
+      </p>
     </div>
-  )
+  );
 }
