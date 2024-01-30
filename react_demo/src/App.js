@@ -3,18 +3,18 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Main from './pages/main';
 import './App.css';
 import Group from './pages/group';
 import Team from './pages/team';
 import Match from './pages/match';
 import News from './pages/news';
-
+import Verteiler from './pages/verteiler';
+import Main from './pages/main';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main />,
+    element: <Verteiler />,
   
     children: [
       {
@@ -35,6 +35,11 @@ const router = createBrowserRouter([
       {
         path: "match/",
         element: <Match />,
+        
+      },
+      {
+        path: "main/",
+        element: <Main />,
         
       },
     ],

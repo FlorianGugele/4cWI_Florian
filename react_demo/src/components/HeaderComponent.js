@@ -5,7 +5,7 @@ export default function HeaderComponent() {
   return (
     <div className="bg-stone-200 h-[9vh] flex items-center">
       <div>
-        <Link to="/">
+        <Link to="/main">
           <img className="h-[7.5vh] w-[7.5vh] ml-4" src="images/logo.jpg" alt="Logo" />
         </Link>
       </div>
