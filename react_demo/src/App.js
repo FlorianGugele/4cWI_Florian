@@ -1,8 +1,5 @@
-import React from 'react';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import React, { useEffect } from 'react';
+import { createBrowserRouter, RouterProvider, useNavigate } from 'react-router-dom';
 import './App.css';
 import Group from './pages/group';
 import Team from './pages/team';
@@ -11,43 +8,56 @@ import News from './pages/news';
 import Verteiler from './pages/verteiler';
 import Main from './pages/main';
 
+function MyComponent() {
+  const navigate = useNavigate();
+
+  // Prüfe, ob die Funktion aufgerufen wurde und die aktuelle URL nicht "/main" ist
+  useEffect(() => {
+    navigate('/main', { replace: true });  // Nutze replace: true, um die aktuelle URL zu ersetzen
+  }, [navigate]);
+
+  return (
+    <div>
+      {/* Hier kannst du weitere Inhalte deiner App hinzufügen */}
+    </div>
+  );
+}
+
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Verteiler />,
-  
     children: [
       {
-        path: "group/",
+        path: 'group/',
         element: <Group />,
-        
       },
       {
-        path: "team/",
+        path: 'team/',
         element: <Team />,
-        
       },
       {
-        path: "news/",
+        path: 'news/',
         element: <News />,
-        
       },
       {
-        path: "match/",
+        path: 'match/',
         element: <Match />,
-        
       },
       {
-        path: "main/",
+        path: 'main/',
         element: <Main />,
-        
       },
     ],
   },
 ]);
 
-export default function App(){
+export default function App() {
   return (
-    <RouterProvider router={router} />
-  )
+    <RouterProvider router={router}>
+      <MyComponent />
+    </RouterProvider>
+  );
 }
+
+
