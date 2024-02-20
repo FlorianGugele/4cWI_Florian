@@ -1,7 +1,8 @@
 import React from "react";
+import UpComingMatches from '../components/main-components/UpComingMatches'
 
 export default function Main() {
     return (
-      <div class="text-white">Startseite</div>
+      <UpComingMatches/>
     );
   }
