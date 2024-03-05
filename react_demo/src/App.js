@@ -11,14 +11,13 @@ import Main from './pages/main';
 function MyComponent() {
   const navigate = useNavigate();
 
-  // Prüfe, ob die Funktion aufgerufen wurde und die aktuelle URL nicht "/main" ist
   useEffect(() => {
-    navigate('/main', { replace: true });  // Nutze replace: true, um die aktuelle URL zu ersetzen
+    navigate('/main', { replace: true });
   }, [navigate]);
 
   return (
     <div>
-      {/* Hier kannst du weitere Inhalte deiner App hinzufügen */}
+      {}
     </div>
   );
 }
