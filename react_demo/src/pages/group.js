@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import GroupA from "../components/group-components/groupA";
 import GroupB from "../components/group-components/groupB";
 import GroupC from "../components/group-components/groupC";
@@ -9,7 +9,20 @@ import GroupG from "../components/group-components/groupG";
 import GroupH from "../components/group-components/groupH";
 
 
+
 export default function Group() {
+
+  
+  useEffect(()=>{
+    fetch('https://api.openligadb.de/getcurrentgroup/champion1').then((response) =>
+    response.json().then((result) => {
+        console.log(result)
+    })
+);
+  },[])
+
+
+
   return (
     <div className="h-[82vh] bg-contain w-full flex flex-row flex-wrap justify-center gap-12" id="Gruppe">
       <GroupA />
