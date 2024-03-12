@@ -19,8 +19,8 @@ export default function Team() {
 
     console.log("datairgendwas", data)
     if(data.team1 == undefined){
-      console.log("huan");
-      return(<>huan</>)
+      console.log("HAAALLO");
+      return(<div className="text-white">Loading banner</div>)
     } else{
       return (
         <div class="flex items-center h-[82vh] bg-contain w-[100vw] relative" id="Teams">
