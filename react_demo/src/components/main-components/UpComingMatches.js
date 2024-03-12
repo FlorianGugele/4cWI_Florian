@@ -4,7 +4,7 @@ export default function UpCommingMatches() {
     return (
         <div class="bg-contain w-[100vw] flex flex-col" id="nextGames">
             <div class="flex justify-end items-center h-screen w-full">
-                <div class=" flex mr-[20%] border-2 transition-transform transform hover:scale-105"><a href="News.html"><img src="images/Achtelfinals.png"></img></a></div>
+                <div class=" flex mr-[20%] border-2 transition-transform transform hover:scale-105"><a href="news.js"><img src="images/Achtelfinals.png"></img></a></div>
                 <div class="flex flex-col items-center justify-center bg-stone-200 h-[60%] w-[30%] mr-10">
                     <p class="text-black">
                         kommende Spiele
@@ -90,7 +90,7 @@ export default function UpCommingMatches() {
                             </div>
                         </div>
                     </div>
-                    <a href="Matches.html"
+                    <a href="match.js"
                         class="hover:bg-gray-300 hover:shadow-md p-4 rounded-md transition duration-300 ease-in-out">
                         <p>
                             mehr Anzeigen...

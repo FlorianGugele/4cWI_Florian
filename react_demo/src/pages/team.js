@@ -17,7 +17,7 @@ export default function Team() {
 
     },[])
 
-    console.log(data.team1)
+    console.log("datairgendwas", data)
     if(data.team1 == undefined){
       console.log("huan");
       return(<>huan</>)

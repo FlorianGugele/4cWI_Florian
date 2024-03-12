@@ -7,7 +7,7 @@ export default function GroupA({name, data}) {
                 <p class="font-bold">Gruppe {name}</p>
             </div>
 
-            <div class="w-[15vw] h-[26vh] m-2 bg-stone-200 z-0 flex flex-row  flex-wrap items-center justify-center">
+            <div class="w-[15vw] h-[28vh] m-2 bg-stone-200 z-0 flex flex-row  flex-wrap items-center justify-center">
                 <div class="flex items-center justify-between bg-blue-500 m-2 h-12 mt-2 mb-0.5 w-[95%]">
                     <p class="ml-2 mr-4">1</p>
                     <a href="http://localhost:3000/team"><img class="w-[3vh] h-[3vh] mx-2 mr-14" src="images/Teamlogos/Bayern.png"></img></a>

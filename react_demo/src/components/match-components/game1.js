@@ -1,8 +1,7 @@
 import React from 'react'
 
-export default function Game1({name,data}) {
+export default function Game1({data}) {
 
-    console.log(data);
     return (
 
         <div class="flex flex-col items-center bg-blue-500 m-2 h-[80%] w-[20%] mb-10 mr-10">
