@@ -4,7 +4,7 @@ export default function Game1({data}) {
 
     return (
 
-        <div class="flex flex-col items-center bg-blue-500 m-2 h-[80%] w-[20%] mb-10 mr-10">
+        <div class="flex flex-col items-center bg-blue-500 ">
             <div>
                 <p class="text-white text-center font-bold text-xs">
                     {data.matchDateTime}
